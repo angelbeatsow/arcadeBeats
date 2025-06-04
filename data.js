@@ -74,9 +74,13 @@ const cardData = [
 
 let cardImages = [];
 for (var i = 0; i < cardData.length; i++) {
+  let _n = Number(i +"");
   let _img = new Image();
-  _img.src = cardData[i].imgSrc;
-  cardImages.push(_img);
+  _img.src = cardData[_n].imgSrc;
+  _img.onload = ()=>{
+    cardImages[_n] = _img;
+  };
+  
 }
 
 let charactorAnimeDatas = {};
