@@ -196,6 +196,7 @@ class Game {
   }
   
   setTodayCard(){
+      /*
     let date1 = new Date('2025-04-26 00:00:00');
     let date2 = new Date();
 
@@ -205,6 +206,8 @@ class Game {
     diff = Math.floor(diff);
     diff = diff % cardData.length;
     this.todayCardIndex = diff;
+    */
+    this.todayCardIndex = randomNum(0,cardData.length -1);
     
   }
   
