@@ -1,0 +1,10 @@
+body {
+    font-size: 15pt;
+    text-align: center;
+    background: #111;
+    color: white;
+}
+
+.displayNone{
+    display: none;
+}
