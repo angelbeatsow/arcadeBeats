@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="testDiv">
+    <span id="testSpan01"></span> <br>
+    <span id="testSpan02"></span> <br>
+    <span id="testSpan03"></span> <hr>
+
+  </div>
+  <div id="canvasDiv" style="position: relative;">
+
+    <input type="file" id="fileInput" accept="image/png" class="displayNone" style="position: absolute;top: 110px;left: 50%;transform: translateX(-50%);-webkit-transform: translateX(-50%);-ms-transform: translateX(-50%);" />
+    <canvas id="canvas">
+  
+    </canvas>
+    <button id="scrollButton" style="position: fixed;top: 0;right: 0;height:40px;">スクロール禁止をONにする</button>
+  </div>
+
+  <canvas id="cardCanvas" style="display: none;">
+    
+  </canvas>
+  <!-- Project -->
+  <script src="data.js"></script>
+  <script src="ctxClass.js"></script>
+  <script src="main.js"></script>
+  <script src="buttleScene.js"></script>
+</body>
+</html>
