@@ -578,7 +578,7 @@ class MenuScene1 extends Scene{
       let _flagName = ["バトルメニュー","オプション画面"];
       setFlagButton(_menu,_flagName);
       this.addText("本日のカードNo." + this.getCardNumberTextToday,50,350);
-      this.addSprite(cardImages[game.todayCardIndex],50,375,40*3,60*3);
+      //this.addSprite(cardImages[game.todayCardIndex],50,375,40*3,60*3);
       let _eve = ()=>{
         game.setBgm("schoolDays");
         this.setGetCardInfo(this.getCardIndexToday);
