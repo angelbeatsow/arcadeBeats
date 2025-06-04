@@ -199,15 +199,18 @@ class Game {
   
     let date1 = new Date('2025-04-26 00:00:00');
     let date2 = new Date();
-    
-    document.getElementById("testSpan01").innerText = date1.getTime() + "," + date2.getTime();
 
     // 2つの日時のタイムスタンプで時間差を計算
+    let memo = "";
     let diff = Math.abs( date2.getTime() - date1.getTime() );
+    memo += diff;
     diff = diff / (24 * 60 * 60 * 1000); //日単位
     diff = Math.floor(diff);
+    memo += "," + diff;
     diff = diff % cardData.length;
+    memo += "," + diff;
     this.todayCardIndex = diff;
+    document.getElementById("testSpan01").innerText = memo;
     /*
     function randomNum(_min = 0, _max = 10) {
       return Math.floor(Math.random() * (_max + 1 - _min) + _min);
