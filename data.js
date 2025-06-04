@@ -75,11 +75,8 @@ const cardData = [
 let cardImages = [];
 for (var i = 0; i < cardData.length; i++) {
   let _n = Number(i +"");
-  let _img = new Image();
-  _img.src = cardData[_n].imgSrc;
-  _img.onload = ()=>{
-    cardImages[_n] = _img;
-  };
+  cardImages.push(new Image());
+  cardImages[_n].src = cardData[_n].imgSrc;
   
 }
 
