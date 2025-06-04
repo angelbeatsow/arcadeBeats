@@ -195,10 +195,12 @@ class Game {
     
   }
   
-  setTodayCard(){
-      /*
+  setTodayCard() {
+  
     let date1 = new Date('2025-04-26 00:00:00');
     let date2 = new Date();
+    
+    document.getElementById("testSpan01").innerText = date1.getTime() + "," + date2.getTime();
 
     // 2つの日時のタイムスタンプで時間差を計算
     let diff = Math.abs( date2.getTime() - date1.getTime() );
@@ -206,9 +208,12 @@ class Game {
     diff = Math.floor(diff);
     diff = diff % cardData.length;
     this.todayCardIndex = diff;
+    /*
+    function randomNum(_min = 0, _max = 10) {
+      return Math.floor(Math.random() * (_max + 1 - _min) + _min);
+    }
+    this.todayCardIndex = randomNum(0, cardData.length - 1);
     */
-    this.todayCardIndex = randomNum(0,cardData.length -1);
-    
   }
   
   setCardImage(index){
