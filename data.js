@@ -48,7 +48,7 @@ const cardData = [
   {
     num:1,
     charactor:"ゆり",
-    imgSrc:"/cardimage/001.png",
+    imgSrc:"cardimage/001.png",
     hp:100,
     atk:100,
     rcv:100,
@@ -60,7 +60,7 @@ const cardData = [
   {
     num: 2,
     charactor: "ゆり",
-    imgSrc: "/cardimage/002.png",
+    imgSrc: "cardimage/002.png",
     hp: 120,
     atk: 60,
     rcv: 120,
